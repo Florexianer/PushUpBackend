@@ -1,0 +1,17 @@
+{
+    "name": "florexianer/push-up-tracker",
+    "description": "Track your progress by starting and stopping a timer and finally, entering the pushups you were able to make",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Florexianer\\PushUpTracker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Florexianer",
+            "email": "8111@htl.rennweg.at"
+        }
+    ],
+    "require": {}
+}
