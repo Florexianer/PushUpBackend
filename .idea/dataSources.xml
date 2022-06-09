@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="pushUp" uuid="f6f4abd6-ab02-4d26-b9dc-789db0a8fa5a">
+    <data-source source="LOCAL" name="pushUp [2]" uuid="84c0abca-1f41-49e6-bf6f-e29caac01fcd">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\xampp\htdocs\Projects\PushUp\pushUp</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\xampp\htdocs\Projects\PushUpBackend\pushUp</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

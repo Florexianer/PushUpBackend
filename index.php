@@ -9,23 +9,14 @@ header("Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accep
 if(isset($_POST)) {
 
     $response = json_decode(file_get_contents('php://input'),true);
-    if($response['before'] && $response['after']) {
+    if(isset($response['before']) && isset($response['after'])) {
         $db = new PDO("sqlite:" . __DIR__ . "/pushUp");
-        /*$query = $db->prepare("
-    INSERT INTO Transformation(before, after) VALUES (?,?)");
-        echo 'heeeeeeey';
-        $result = $query->execute([$response['before'],$response['after']]);*/
 
         $query = $db->prepare("
 UPDATE User
 SET before = ?, after = ?
 WHERE pk_username = ?");
         $result = $query->execute([$response['before'],$response['after'],$response['username']]);
-    } else if($response['before']) {
-        header("Status: 400 Bad Request");
-        echo 'You need to send a before image';
-    } else if($response['after']) {
-        header("Status: 400 Bad Request");
-        echo 'You need to send a after image';
+        echo 'suc';
     }
 }

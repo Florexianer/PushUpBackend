@@ -22,6 +22,12 @@ CREATE TABLE Workout
 INSERT INTO USER(pk_username, password)
 VALUES ('Florian', 'xy');
 
+INSERT INTO USER(pk_username, password)
+VALUES ('Florian2', 'xy');
+
+INSERT INTO USER(pk_username, password)
+VALUES ('Florian3', 'xy');
+
 UPDATE User
 SET before = ?, after = ?
 WHERE pk_username = ?;
