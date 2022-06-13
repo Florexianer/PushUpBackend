@@ -11,7 +11,7 @@ CREATE TABLE User
 
 CREATE TABLE Workout
 (
-    pk_workout INTEGER AUTO_INCREMENT,
+    pk_workout INTEGER PRIMARY KEY AUTOINCREMENT,
     start       varchar(255),
     end         varchar(255),
     pushUpCount INTEGER,
